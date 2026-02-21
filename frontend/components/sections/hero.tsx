@@ -1,0 +1,56 @@
+import { Button } from "@/components/ui/button";
+import { IconSparkles, IconArrowUpRight } from "@tabler/icons-react";
+import Link from "next/link";
+
+export function Hero() {
+  return (
+    <section className="relative pt-40 pb-20 md:pt-48 md:pb-32 overflow-hidden flex flex-col items-center justify-center text-center px-4">
+      {/* Background ambient mesh blobs */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] z-0 pointer-events-none opacity-60">
+        <div className="absolute top-[20%] left-[20%] w-[600px] h-[600px] bg-blue-400 rounded-full mix-blend-multiply filter blur-[120px] opacity-40 animate-blob" />
+        <div className="absolute top-[20%] right-[20%] w-[600px] h-[600px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-[120px] opacity-40 animate-blob animation-[blob_7s_infinite_2s]" />
+        <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#e0efff] rounded-[100%] filter blur-[80px]" />
+        
+        {/* Simulating the wave below the text */}
+        <div className="absolute top-[60%] left-0 w-full h-[600px] bg-gradient-to-t from-[#88c4ff]/30 to-transparent skew-y-[-5deg] filter blur-[60px]" />
+        <div className="absolute top-[65%] left-0 w-full h-[600px] bg-gradient-to-t from-[#4da1ff]/20 to-transparent skew-y-[3deg] filter blur-[80px]" />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+        {/* Badge */}
+        <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-white/40 shadow-sm rounded-full px-4 py-1.5 mb-8">
+          <span className="text-xs font-semibold text-slate-800 flex items-center gap-1.5">
+            <span className="w-4 h-4 rounded-full bg-slate-100 flex items-center justify-center border border-slate-200">
+               <span className="w-1.5 h-1.5 bg-slate-600 rounded-full" />
+            </span>
+            Built for Students, Educators & Researcher
+          </span>
+        </div>
+
+        {/* Heading */}
+        <h1 className="text-5xl md:text-6xl lg:text-[72px] leading-[1.1] font-bold tracking-tight text-slate-900 mb-6">
+          Generate Academic Content <br className="hidden md:block" />
+          with AI Instantly
+        </h1>
+
+        {/* Subheading */}
+        <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl font-medium leading-[1.6]">
+          GenasAI helps you generate assignments, essays, research drafts, and academic content <br className="hidden md:block" />
+          in minutes not hours.
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row items-center gap-4">
+          <Button size="lg" className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_20px_0_rgb(59,96,255,0.3)] transition-all">
+            <IconSparkles className="w-4 h-4 mr-2" />
+            Get Started Free
+          </Button>
+          <Button size="lg" variant="outline" className="rounded-full bg-white/80 backdrop-blur-sm border-slate-200 text-slate-800 hover:bg-slate-50 px-8 h-12 shadow-sm font-semibold transition-all">
+            How It Works
+            <IconArrowUpRight className="w-4 h-4 ml-2" />
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
