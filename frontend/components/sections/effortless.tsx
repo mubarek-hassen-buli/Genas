@@ -33,53 +33,15 @@ export function Effortless() {
               Get Started Free
             </Button>
           </div>
-          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] p-8 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
-             {/* Simple lines background */}
-             <div className="absolute top-12 left-12 right-12 flex justify-between opacity-30">
-                <div className="w-8 h-8 rounded-full border-2 border-blue-200 bg-transparent flex-shrink-0" />
-                <div className="h-[2px] w-full bg-blue-200 mt-4 mx-2" />
-                <div className="w-8 h-8 rounded-full border-2 border-blue-200 bg-transparent flex-shrink-0" />
-             </div>
-             
-             {/* Left side pills */}
-             <div className="flex flex-col gap-4 relative z-10 translate-x-4">
-                <div className="bg-white rounded-lg p-2.5 shadow-sm border border-slate-100 flex items-center gap-2 w-32 relative">
-                   <IconSparkles className="text-blue-500 w-4 h-4" />
-                   <div className="h-4 flex-1 border-b border-slate-200 relative"><span className="absolute -top-1.5 text-[10px] text-slate-500 font-medium">Topic</span></div>
-                   {/* Connection line */}
-                   <svg className="absolute -right-16 top-1/2 w-16 h-12 overflow-visible" preserveAspectRatio="none"><path d="M0,0 C20,0 30,30 60,30" fill="none" stroke="#6b9aff" strokeWidth="2" strokeDasharray="3,3" /></svg>
-                </div>
-                <div className="bg-white rounded-lg p-2.5 shadow-sm border border-slate-100 flex items-center gap-2 w-32 relative z-20">
-                   <IconSparkles className="text-blue-500 w-4 h-4" />
-                   <div className="h-4 flex-1 border-b border-slate-200 relative"><span className="absolute -top-1.5 text-[10px] text-slate-500 font-medium">Instruction</span></div>
-                   {/* Connection line */}
-                   <svg className="absolute -right-16 top-1/2 w-16 h-2 overflow-visible" preserveAspectRatio="none"><line x1="0" y1="0" x2="60" y2="0" stroke="#6b9aff" strokeWidth="2" strokeDasharray="3,3" /></svg>
-                </div>
-                <div className="bg-white rounded-lg p-2.5 shadow-sm border border-slate-100 flex items-center gap-2 w-32 relative">
-                   <IconSparkles className="text-blue-500 w-4 h-4" />
-                   <div className="h-4 flex-1 border-b border-slate-200 relative"><span className="absolute -top-1.5 text-[10px] text-slate-500 font-medium">File Format</span></div>
-                   {/* Connection line */}
-                   <svg className="absolute -right-16 bottom-1/2 w-16 h-12 overflow-visible" preserveAspectRatio="none"><path d="M0,12 C20,12 30,-20 60,-20" fill="none" stroke="#6b9aff" strokeWidth="2" strokeDasharray="3,3" /></svg>
-                </div>
-             </div>
-
-             {/* Blue connection badge */}
-             <div className="relative z-30 mx-6 bg-[#2563eb] text-white text-[10px] font-bold px-3 py-1.5 rounded-md shadow-lg shadow-blue-500/30 -translate-y-2">
-                54 × 0
-             </div>
-
-             {/* Right side document */}
-             <div className="relative z-20 bg-white rounded-xl shadow-xl border border-indigo-50/50 w-40 h-52 p-4 flex flex-col gap-3 ml-2 border-l-4 border-l-indigo-400">
-                <div className="w-full absolute inset-0 rounded-xl bg-indigo-50/50 blur-sm -z-10 translate-x-2 translate-y-2" />
-                <h4 className="text-[10px] font-bold text-slate-800 leading-tight">Generated<br/>Document Title</h4>
-                <div className="flex flex-col gap-2 mt-2">
-                   <div className="w-full h-1 bg-slate-400 rounded-sm" />
-                   <div className="w-5/6 h-1 bg-slate-200 rounded-sm" />
-                   <div className="w-full h-1 bg-slate-200 rounded-sm" />
-                   <div className="w-4/5 h-1 bg-slate-200 rounded-sm" />
-                   <div className="w-full h-1 bg-slate-200 rounded-sm" />
-                </div>
-             </div>
+          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
+             <video 
+               src="/video/first.mp4" 
+               autoPlay 
+               loop 
+               muted 
+               playsInline 
+               className="w-full h-full object-cover"
+             />
           </div>
         </div>
 
