@@ -91,40 +91,15 @@ export function Effortless() {
               Get Started Free
             </Button>
           </div>
-          <div className="flex-1 w-full bg-gradient-to-br from-[#dfeaff] via-[#ffffff] to-[#99bfff] rounded-[40px] p-8 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
-             {/* Central AI Document */}
-             <div className="w-24 h-32 bg-white rounded-md shadow-2xl border-t-[6px] border-[#3b60ff] relative flex flex-col items-center justify-center gap-2 z-20">
-                <div className="bg-slate-100 p-2 rounded-full border border-slate-200">
-                   <svg className="w-6 h-6 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M6.34 6.34l-1.41-1.41M19.07 19.07l-1.41-1.41M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /><circle cx="12" cy="12" r="5" fill="#3b60ff"/></svg>
-                </div>
-                <div className="w-3/4 h-1 bg-slate-200 mt-2 rounded-sm" />
-                <div className="w-full h-1 bg-slate-200 px-2 rounded-sm" />
-                <div className="w-5/6 h-1 bg-slate-200 rounded-sm" />
-                
-                {/* SVG splitting lines */}
-                <svg className="absolute top-1/2 -right-24 w-24 h-32 overflow-visible -translate-y-1/2 -z-10" preserveAspectRatio="none">
-                   <path d="M0,16 C10,16 15,-10 24,-10" fill="none" stroke="#6b9aff" strokeWidth="2" />
-                   <path d="M0,16 C10,16 15,4 24,4" fill="none" stroke="#6b9aff" strokeWidth="2" />
-                   <path d="M0,16 C10,16 15,18 24,18" fill="none" stroke="#6b9aff" strokeWidth="2" />
-                   <path d="M0,16 C10,16 15,32 24,32" fill="none" stroke="#6b9aff" strokeWidth="2" />
-                </svg>
-             </div>
-             
-             {/* Format Documents */}
-             <div className="flex flex-col gap-3 ml-12 relative z-20">
-                <div className="bg-white rounded pl-2 pr-6 py-1.5 shadow-md border border-slate-200 flex items-center gap-2 text-[9px] font-bold text-slate-600">
-                   <div className="bg-indigo-100 text-[#3b60ff] px-1 py-0.5 rounded text-[8px]">PDF</div> PDF Document
-                </div>
-                <div className="bg-white rounded pl-2 pr-6 py-1.5 shadow-md border border-slate-200 flex items-center gap-2 text-[9px] font-bold text-slate-600">
-                   <div className="bg-indigo-100 text-[#3b60ff] px-1 py-0.5 rounded text-[8px]">DOCX</div> DOCX Document
-                </div>
-                <div className="bg-white rounded pl-2 pr-6 py-1.5 shadow-md border border-slate-200 flex items-center gap-2 text-[9px] font-bold text-slate-600">
-                   <div className="bg-indigo-100 text-[#3b60ff] px-1 py-0.5 rounded text-[8px]">PPT</div> PPT Document
-                </div>
-                <div className="bg-white rounded pl-2 pr-6 py-1.5 shadow-md border border-slate-200 flex items-center gap-2 text-[9px] font-bold text-slate-600">
-                   <div className="bg-indigo-100 text-[#3b60ff] px-1 py-0.5 rounded text-[8px]">TXT</div> TXT Document
-                </div>
-             </div>
+          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
+             <video 
+               src="/video/second.mp4" 
+               autoPlay 
+               loop 
+               muted 
+               playsInline 
+               className="w-full h-full object-cover"
+             />
           </div>
         </div>
 

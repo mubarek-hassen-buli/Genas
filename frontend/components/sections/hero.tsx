@@ -1,19 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { IconSparkles, IconArrowUpRight } from "@tabler/icons-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Hero() {
   return (
     <section className="relative pt-40 pb-20 md:pt-48 md:pb-32 overflow-hidden flex flex-col items-center justify-center text-center px-4">
-      {/* Background ambient mesh blobs */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] z-0 pointer-events-none opacity-60">
-        <div className="absolute top-[20%] left-[20%] w-[600px] h-[600px] bg-blue-400 rounded-full mix-blend-multiply filter blur-[120px] opacity-40 animate-blob" />
-        <div className="absolute top-[20%] right-[20%] w-[600px] h-[600px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-[120px] opacity-40 animate-blob animation-[blob_7s_infinite_2s]" />
-        <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#e0efff] rounded-[100%] filter blur-[80px]" />
-        
-        {/* Simulating the wave below the text */}
-        <div className="absolute top-[60%] left-0 w-full h-[600px] bg-gradient-to-t from-[#88c4ff]/30 to-transparent skew-y-[-5deg] filter blur-[60px]" />
-        <div className="absolute top-[65%] left-0 w-full h-[600px] bg-gradient-to-t from-[#4da1ff]/20 to-transparent skew-y-[3deg] filter blur-[80px]" />
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Image 
+          src="/images/background-01.png"
+          alt="Hero Background"
+          fill
+          priority
+          className="object-cover object-center"
+        />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
