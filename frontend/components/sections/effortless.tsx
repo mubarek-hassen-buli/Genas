@@ -186,6 +186,24 @@ export function Effortless() {
             </Button>
           </div>
         </div>
+
+        {/* Block 5: Organized Dashboard */}
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          <div className="flex-1 text-left lg:pr-8">
+            <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Organized Dashboard</h3>
+            <p className="text-base lg:text-lg text-slate-500 font-medium leading-relaxed mb-8">
+              All your generated documents are saved, categorized, and easy to manage in one place.
+            </p>
+            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_20px_0_rgb(59,96,255,0.3)] transition-all">
+              <IconSparkles className="w-4 h-4 mr-2" />
+              Get Started Free
+            </Button>
+          </div>
+          <div className="flex-1 w-full bg-white rounded-[40px] p-2 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-slate-200 shadow-sm">
+             {/* Charcoal Dark Gray Box Mockup */}
+             <div className="w-full h-full bg-[#202020] rounded-[32px] border-4 border-white shadow-inner relative overflow-hidden" />
+          </div>
+        </div>
       </div>
     </section>
   );

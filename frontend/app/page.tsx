@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/hero";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Features } from "@/components/sections/features";
 import { Effortless } from "@/components/sections/effortless";
+import { Testimonials } from "@/components/sections/testimonials";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <HowItWorks />
       <Features />
       <Effortless />
+      <Testimonials />
     </main>
   );
 }
