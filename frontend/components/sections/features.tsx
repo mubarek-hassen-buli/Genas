@@ -5,29 +5,17 @@ export function Features() {
     {
       title: "Assignment Generator",
       description: "Generate structured, ready assignments with customizable depth, format, and templates.",
-      icon: (
-        <div className="relative w-full h-40 flex items-center justify-center mb-6">
-          <Image src="/images/assignment-img.png" alt="Assignment Generator" width={160} height={160} className="object-contain" />
-        </div>
-      )
+      image: <Image src="/images/assignment-img.png" alt="Assignment Generator" width={110} height={110} className="object-contain drop-shadow-lg" />
     },
     {
       title: "Essay Generator",
       description: "Create clear, well-organized essays tailored to your topic, tone, and academic level.",
-      icon: (
-        <div className="relative w-full h-40 flex items-center justify-center mb-6">
-          <Image src="/images/white-paper.png" alt="Essay Generator" width={160} height={160} className="object-contain" />
-        </div>
-      )
+      image: <Image src="/images/white-paper.png" alt="Essay Generator" width={110} height={110} className="object-contain drop-shadow-lg" />
     },
     {
       title: "Research Generator",
       description: "Produce concise research summaries and structured drafts from complex topics in minutes.",
-      icon: (
-        <div className="relative w-full h-40 flex items-center justify-center mb-6">
-          <Image src="/images/scoop.png" alt="Research Generator" width={160} height={160} className="object-contain" />
-        </div>
-      )
+      image: <Image src="/images/scoop.png" alt="Research Generator" width={110} height={110} className="object-contain drop-shadow-lg" />
     }
   ];
 
@@ -48,27 +36,33 @@ export function Features() {
       </div>
 
       {/* Features Grid */}
-      <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-        {features.map((feature, index) => (
-          <div 
-            key={index}
-            className="bg-white rounded-[32px] p-6 text-left shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300 border border-slate-100 hover:-translate-y-1 relative group overflow-hidden"
-          >
-             {/* Subtle gradient hover effect */}
-             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-50/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-             
-             {/* Feature Visual */}
-             {feature.icon}
+      <div className="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+        {features.map((feature, index) => {
+          // Calculate rotation based on index: -5deg for first, 0 for middle, 5deg for third
+          const rotationClass = index === 0 ? '-rotate-[3deg]' : index === 2 ? 'rotate-[3deg]' : '';
+          
+          return (
+            <div 
+              key={index}
+              className={`bg-white rounded-[32px] p-3 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] transition-all duration-300 relative group overflow-hidden flex flex-col ${rotationClass} hover:rotate-0 hover:-translate-y-2`}
+            >
+               <div className="bg-[#F5F5F5] rounded-[24px] p-5 h-full flex flex-col text-left">
+                 {/* Feature Visual */}
+                 <div className="relative w-full h-32 flex items-center justify-center mb-8 mt-2">
+                   {feature.image}
+                 </div>
 
-             {/* Content */}
-             <div className="relative z-10 px-2 pb-2">
-               <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
-               <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                 {feature.description}
-               </p>
-             </div>
-          </div>
-        ))}
+                 {/* Content */}
+                 <div className="relative z-10 px-1 pb-1 mt-auto">
+                   <h3 className="text-[17px] font-bold text-slate-900 mb-2.5">{feature.title}</h3>
+                   <p className="text-[13px] text-slate-500 leading-relaxed font-medium">
+                     {feature.description}
+                   </p>
+                 </div>
+               </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
