@@ -39,15 +39,16 @@ export function Hero() {
           in minutes not hours.
         </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <Button size="lg" className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_20px_0_rgb(59,96,255,0.3)] transition-all">
-            <IconSparkles className="w-4 h-4 mr-2" />
-            Get Started Free
-          </Button>
-          <Button size="lg" variant="outline" className="rounded-full bg-white/80 backdrop-blur-sm border-slate-200 text-slate-800 hover:bg-slate-50 px-8 h-12 shadow-sm font-semibold transition-all">
-            How It Works
-            <IconArrowUpRight className="w-4 h-4 ml-2" />
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row items-center gap-4 relative z-10">
+          <Link href="/dashboard">
+            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_30px_rgb(59,96,255,0.3)] transition-all flex items-center gap-2 group font-semibold text-[15px]">
+              <IconSparkles className="w-4 h-4 mr-2 group-hover:animate-pulse" />
+              Get Started Free
+            </Button>
+          </Link>
+          <Button variant="outline" className="rounded-full bg-white/80 backdrop-blur-sm border-slate-200 text-slate-700 hover:bg-slate-50 px-8 h-12 shadow-sm transition-all font-semibold text-[15px]">
+            Learn How it Works
           </Button>
         </div>
       </div>

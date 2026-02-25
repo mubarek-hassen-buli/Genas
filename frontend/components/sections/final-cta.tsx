@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { IconSparkles } from "@tabler/icons-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function FinalCta() {
   return (
@@ -27,10 +28,12 @@ export function FinalCta() {
           <p className="text-lg md:text-xl text-blue-100/70 font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
             Generate structured assignments, essays, and research papers ready to submit in minutes.
           </p>
-          <Button className="rounded-full bg-white hover:bg-slate-100 text-[#3b60ff] px-8 h-12 shadow-[0_8px_30px_rgb(255,255,255,0.2)] transition-all font-bold text-[15px]">
-            <IconSparkles className="w-4 h-4 mr-2" />
-            Get Started Free
-          </Button>
+          <Link href="/dashboard">
+            <Button className="rounded-full bg-white hover:bg-slate-100 text-[#3b60ff] px-8 h-12 shadow-[0_8px_30px_rgb(255,255,255,0.2)] transition-all font-bold text-[15px]">
+              <IconSparkles className="w-4 h-4 mr-2" />
+              Get Started Free
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
