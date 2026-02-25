@@ -6,7 +6,7 @@ export function FinalCta() {
   return (
     <section className="py-24 bg-[#fcfcfd] flex justify-center px-4 relative overflow-hidden">
       {/* Background connecting line from previous section */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-24 border-l border-dashed border-blue-400 opacity-50 z-0"></div>
+      
       
       <div className="w-full max-w-6xl mx-auto bg-[#030614] rounded-[48px] overflow-hidden relative border border-slate-800 shadow-2xl z-10">
         
