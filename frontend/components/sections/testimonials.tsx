@@ -31,9 +31,8 @@ export function Testimonials() {
         <div className="inline-flex items-center justify-center bg-white border border-slate-200 text-slate-500 text-[11px] font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm uppercase tracking-wider">
           Testimonial
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
-          Here's What Others <br />
-          Are Saying About Us
+        <h2 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight text-balance max-w-3xl mx-auto">
+          Here's What Others Are Saying About Us
         </h2>
       </div>
 

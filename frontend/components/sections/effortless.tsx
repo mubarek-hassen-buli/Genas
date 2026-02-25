@@ -9,9 +9,8 @@ export function Effortless() {
         <div className="inline-flex items-center justify-center bg-white border border-slate-200 text-slate-500 text-[11px] font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm uppercase tracking-wider">
           why GenasAI
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
-          What Makes <br />
-          GenasAI Effortless Yet Powerful
+        <h2 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight text-balance max-w-4xl mx-auto">
+          What Makes GenasAI Effortless Yet Powerful
         </h2>
         <p className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
           One intelligent workspace to generate, customize, and export academic work without complexity.
