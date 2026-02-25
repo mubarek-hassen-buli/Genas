@@ -6,6 +6,8 @@ import { Effortless } from "@/components/sections/effortless";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Pricing } from "@/components/sections/pricing";
 import { Faqs } from "@/components/sections/faqs";
+import { FinalCta } from "@/components/sections/final-cta";
+import { Footer } from "@/components/layout/footer";
 
 export default function Page() {
   return (
@@ -18,6 +20,8 @@ export default function Page() {
       <Testimonials />
       <Pricing />
       <Faqs />
+      <FinalCta />
+      <Footer />
     </main>
   );
 }
