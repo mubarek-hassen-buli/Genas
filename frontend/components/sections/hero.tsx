@@ -29,9 +29,8 @@ export function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-5xl md:text-6xl lg:text-[72px] leading-[1.1] font-bold tracking-tight text-slate-900 mb-6">
-          Generate Academic Content <br className="hidden md:block" />
-          with AI Instantly
+        <h1 className="text-5xl md:text-6xl lg:text-[72px] leading-[1.1] font-bold tracking-tight text-slate-900 mb-6 text-balance max-w-5xl mx-auto">
+          Generate Academic Content with AI Instantly
         </h1>
 
         {/* Subheading */}

@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import { IconCircleCheck, IconCircleX } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 
 export function Pricing() {
+  const [isYearly, setIsYearly] = useState(false);
+
   return (
     <section className="py-24 bg-[#f8fafc]/50 flex flex-col items-center justify-center text-center px-4">
       {/* Header */}
@@ -14,12 +19,21 @@ export function Pricing() {
         </h2>
         
         {/* Toggle */}
-        <div className="flex items-center gap-4 bg-white rounded-full p-1.5 border border-slate-200 shadow-sm mx-auto">
-           <span className="text-sm font-bold text-[#3b60ff] pl-4">Monthly Plan</span>
-           <div className="w-14 h-7 bg-[#3b60ff] rounded-full p-1 flex items-center shadow-inner cursor-pointer">
-              <div className="w-5 h-5 bg-white rounded-full shadow-sm" />
+        <div 
+          onClick={() => setIsYearly(!isYearly)}
+          className="flex items-center gap-4 bg-white rounded-full p-1.5 border border-slate-200 shadow-sm mx-auto cursor-pointer select-none relative z-20"
+        >
+           <span className={`text-sm font-bold pl-4 transition-colors ${!isYearly ? "text-[#3b60ff]" : "text-slate-500"}`}>
+             Monthly Plan
+           </span>
+           <div className="w-14 h-7 bg-[#3b60ff] rounded-full p-1 flex items-center shadow-inner relative">
+              <div 
+                className={`w-5 h-5 bg-white rounded-full shadow-sm absolute top-1 transition-transform duration-300 ease-in-out ${isYearly ? "translate-x-7" : "translate-x-0"}`} 
+              />
            </div>
-           <span className="text-sm font-bold text-slate-800 pr-4">Yearly Plan</span>
+           <span className={`text-sm font-bold pr-4 transition-colors ${isYearly ? "text-[#3b60ff]" : "text-slate-500"}`}>
+             Yearly Plan
+           </span>
         </div>
       </div>
 
@@ -70,7 +84,7 @@ export function Pricing() {
         </div>
 
         {/* Student Pro */}
-        <div className="flex flex-col text-left p-8 rounded-[32px] bg-[#2210a3] border border-[#2210a3] shadow-xl relative scale-[1.03] z-10">
+        <div className="flex flex-col text-left p-8 rounded-[32px] bg-[#2210a3] border border-[#2210a3] shadow-xl relative md:scale-[1.03] z-10">
            {/* Most Popular Badge */}
            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-slate-800 text-xs font-bold px-4 py-1.5 rounded-full shadow-md whitespace-nowrap">
              Most Popular
@@ -78,8 +92,12 @@ export function Pricing() {
 
            <h3 className="text-lg font-bold text-white mb-4 mt-2">Student Pro</h3>
            <div className="flex items-baseline mb-2">
-             <span className="text-5xl font-bold text-white tracking-tight">$9</span>
-             <span className="text-lg text-white/80 font-medium">/month</span>
+             <span className="text-5xl font-bold text-white tracking-tight transition-all">
+               ${isYearly ? "79" : "9"}
+             </span>
+             <span className="text-lg text-white/80 font-medium ml-1">
+               /{isYearly ? "year" : "month"}
+             </span>
            </div>
            <p className="text-sm text-white/70 font-medium leading-relaxed mb-8 h-10">
              For students who need consistent, high quality submissions
@@ -115,8 +133,12 @@ export function Pricing() {
         <div className="flex flex-col text-left p-8 rounded-[32px] bg-[#eef4ff] border border-white shadow-sm relative">
            <h3 className="text-lg font-bold text-slate-900 mb-4">Pro Plan</h3>
            <div className="flex items-baseline mb-2">
-             <span className="text-5xl font-bold text-slate-900 tracking-tight">$19</span>
-             <span className="text-lg text-slate-600 font-medium">/month</span>
+             <span className="text-5xl font-bold text-slate-900 tracking-tight transition-all">
+               ${isYearly ? "149" : "19"}
+             </span>
+             <span className="text-lg text-slate-600 font-medium ml-1">
+               /{isYearly ? "year" : "month"}
+             </span>
            </div>
            <p className="text-sm text-slate-500 font-medium leading-relaxed mb-8 h-10">
              For researchers and professionals who need full control
