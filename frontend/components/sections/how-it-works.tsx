@@ -71,7 +71,7 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="py-24 bg-white flex flex-col items-center justify-center text-center px-4 relative z-10 border-t border-slate-100/50">
+    <section className="py-24 bg-[#F5F5F5] flex flex-col items-center justify-center text-center px-4 relative z-10 border-t border-slate-100/50">
       
       {/* Header */}
       <div className="max-w-3xl mx-auto mb-16">

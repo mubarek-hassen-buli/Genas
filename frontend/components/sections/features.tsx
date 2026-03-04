@@ -20,7 +20,7 @@ export function Features() {
   ];
 
   return (
-    <section className="py-24 bg-[#f8fafc]/50 flex flex-col items-center justify-center text-center px-4">
+    <section className="py-24 bg-[#F5F5F5] flex flex-col items-center justify-center text-center px-4">
       {/* Header */}
       <div className="max-w-3xl mx-auto mb-16">
         <div className="inline-flex items-center justify-center bg-white border border-slate-200 text-slate-500 text-xs font-medium px-4 py-1.5 rounded-full mb-6 shadow-sm">

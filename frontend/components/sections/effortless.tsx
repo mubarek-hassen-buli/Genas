@@ -4,7 +4,7 @@ import { IconSparkles } from "@tabler/icons-react";
 
 export function Effortless() {
   return (
-    <section className="py-24 bg-[#fcfcfd] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
+    <section className="py-24 bg-[#F5F5F5] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
       {/* Header */}
       <div className="max-w-3xl mx-auto mb-20 relative z-10 flex flex-col items-center">
         <div className="inline-flex items-center justify-center bg-white border border-slate-200 text-slate-500 text-[11px] font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm uppercase tracking-wider">
@@ -33,7 +33,7 @@ export function Effortless() {
               Get Started Free
             </Button>
           </div>
-          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
+          <div className="flex-1 w-full bg-white rounded-[40px] aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-slate-200 shadow-inner">
              <video 
                src="/video/first.mp4" 
                autoPlay 
@@ -47,23 +47,23 @@ export function Effortless() {
 
         {/* Block 2: Custom Templates */}
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] p-8 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
+          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] p-8 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-slate-200 shadow-inner">
              {/* Fan Cards Container */}
              <div className="relative w-full h-full flex items-center justify-center">
                 
-                {/* Far Left Card (card-6) */}
+                {/* Far Left Card (card-3) */}
                 <div className="absolute left-[5%] bottom-[15%] w-[160px] h-[220px] bg-white rounded-2xl shadow-xl border border-slate-200 -rotate-[15deg] z-10 overflow-hidden hidden md:block">
-                   <Image src="/images/card-6.png" alt="Template" fill className="object-cover" />
-                </div>
-
-                {/* Left Card (card-3) */}
-                <div className="absolute left-[15%] bottom-[10%] w-[170px] h-[240px] bg-white rounded-2xl shadow-xl border border-slate-200 -rotate-[8deg] z-20 overflow-hidden">
                    <Image src="/images/card-3.jpg" alt="Template" fill className="object-cover" />
                 </div>
 
-                {/* Right Card (card-4) */}
+                {/* Left Card (card-6) */}
+                <div className="absolute left-[15%] bottom-[10%] w-[170px] h-[240px] bg-white rounded-2xl shadow-xl border border-slate-200 -rotate-[8deg] z-20 overflow-hidden">
+                   <Image src="/images/card-6.png" alt="Template" fill className="object-cover" />
+                </div>
+
+                {/* Right Card (card-2) */}
                 <div className="absolute right-[15%] bottom-[10%] w-[170px] h-[240px] bg-white rounded-2xl shadow-xl border border-slate-200 rotate-[8deg] z-20 overflow-hidden">
-                   <Image src="/images/card-4.jpg" alt="Template" fill className="object-cover" />
+                   <Image src="/images/card-2.jpg" alt="Template" fill className="object-cover" />
                 </div>
 
                 {/* Far Right Card (card-5) */}
@@ -118,7 +118,7 @@ export function Effortless() {
               Get Started Free
             </Button>
           </div>
-          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
+          <div className="flex-1 w-full bg-white rounded-[40px] aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-slate-200 shadow-inner">
              <video 
                src="/video/second.mp4" 
                autoPlay 

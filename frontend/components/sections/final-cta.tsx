@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function FinalCta() {
   return (
-    <section className="py-24 bg-[#fcfcfd] flex justify-center px-4 relative overflow-hidden">
+    <section className="py-24 bg-[#F5F5F5] flex justify-center px-4 relative overflow-hidden">
       {/* Background connecting line from previous section */}
       
       

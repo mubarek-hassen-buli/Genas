@@ -3,7 +3,7 @@ import { IconSparkles } from "@tabler/icons-react";
 
 export function MobileApp() {
   return (
-    <section className="py-24 bg-white flex flex-col items-center justify-center px-4 relative overflow-hidden">
+    <section className="py-24 bg-[#F5F5F5] flex flex-col items-center justify-center px-4 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-blue-50/50 rounded-full blur-[120px] pointer-events-none" />
 
