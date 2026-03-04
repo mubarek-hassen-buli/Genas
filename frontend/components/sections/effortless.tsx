@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { IconSparkles } from "@tabler/icons-react";
 
@@ -46,24 +47,51 @@ export function Effortless() {
 
         {/* Block 2: Custom Templates */}
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] p-8 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner perspective-[1000px]">
-             {/* Faded background cards */}
-             <div className="absolute right-[20%] w-32 h-44 bg-slate-200/50 rounded-xl rotate-[15deg] blur-[2px] border border-slate-300/50 transform-style-3d rotate-y-[-20deg]" />
-             <div className="absolute right-[28%] w-40 h-52 bg-slate-100/80 rounded-xl rotate-[5deg] shadow-lg border border-slate-200/50 transform-style-3d rotate-y-[-10deg]" />
-             
-             {/* Main Card */}
-             <div className="relative z-10 w-48 h-64 bg-white rounded-[24px] shadow-2xl flex flex-col items-center p-3 border-4 border-[#deeafc]">
-                <div className="w-full flex-1 rounded-2xl border-2 border-[#e0ecff] mb-3 relative overflow-hidden bg-[#fafcff]">
-                   <div className="absolute inset-x-2 top-2 h-20 bg-[#f0f6ff] rounded-xl" />
+          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] p-8 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
+             {/* Fan Cards Container */}
+             <div className="relative w-full h-full flex items-center justify-center">
+                
+                {/* Far Left Card (card-6) */}
+                <div className="absolute left-[5%] bottom-[15%] w-[160px] h-[220px] bg-white rounded-2xl shadow-xl border border-slate-200 -rotate-[15deg] z-10 overflow-hidden hidden md:block">
+                   <Image src="/images/card-6.png" alt="Template" fill className="object-cover" />
                 </div>
-                <div className="w-full flex justify-between items-center px-2">
-                   <div className="bg-[#3b60ff] text-white text-[8px] font-semibold px-4 py-1.5 rounded-full shadow-md">
-                      Use Template
+
+                {/* Left Card (card-3) */}
+                <div className="absolute left-[15%] bottom-[10%] w-[170px] h-[240px] bg-white rounded-2xl shadow-xl border border-slate-200 -rotate-[8deg] z-20 overflow-hidden">
+                   <Image src="/images/card-3.jpg" alt="Template" fill className="object-cover" />
+                </div>
+
+                {/* Right Card (card-4) */}
+                <div className="absolute right-[15%] bottom-[10%] w-[170px] h-[240px] bg-white rounded-2xl shadow-xl border border-slate-200 rotate-[8deg] z-20 overflow-hidden">
+                   <Image src="/images/card-4.jpg" alt="Template" fill className="object-cover" />
+                </div>
+
+                {/* Far Right Card (card-5) */}
+                <div className="absolute right-[5%] bottom-[15%] w-[160px] h-[220px] bg-white rounded-2xl shadow-xl border border-slate-200 rotate-[15deg] z-10 overflow-hidden hidden md:block">
+                   <Image src="/images/card-5.jpg" alt="Template" fill className="object-cover" />
+                </div>
+
+                {/* Main Center Card (Double Section) */}
+                <div className="relative z-30 w-56 h-[320px] bg-white rounded-[32px] shadow-2xl flex flex-col p-4 border-4 border-[#deeafc] transition-transform hover:scale-105 duration-500">
+                   {/* Top Section */}
+                   <div className="flex-1 rounded-2xl border border-slate-100 mb-3 relative overflow-hidden bg-slate-50">
+                      <Image src="/images/card-1-sec-1.jpg" alt="Template Section 1" fill className="object-cover" />
                    </div>
-                   <div className="w-5 h-5 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-[10px]">
-                      +
+                   {/* Bottom Section */}
+                   <div className="flex-1 rounded-2xl border border-slate-100 mb-4 relative overflow-hidden bg-slate-50">
+                      <Image src="/images/card-1-sec-2.jpg" alt="Template Section 2" fill className="object-cover" />
+                   </div>
+                   
+                   <div className="w-full flex justify-between items-center px-1">
+                      <div className="bg-[#3b60ff] text-white text-[10px] font-bold px-5 py-2 rounded-full shadow-lg">
+                         Use Template
+                      </div>
+                      <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-[14px] shadow-sm border border-slate-200">
+                         +
+                      </div>
                    </div>
                 </div>
+
              </div>
           </div>
           <div className="flex-1 text-left lg:pl-8">
@@ -135,9 +163,16 @@ export function Effortless() {
               Get Started Free
             </Button>
           </div>
-          <div className="flex-1 w-full bg-white rounded-[40px] p-2 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-slate-200 shadow-sm">
-             {/* Charcoal Dark Gray Box Mockup */}
-             <div className="w-full h-full bg-[#202020] rounded-[32px] border-4 border-white shadow-inner relative overflow-hidden" />
+          <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] p-10 lg:p-14 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
+             {/* Actual Dashboard Image with sleek border and shadow */}
+             <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-white shadow-2xl">
+                <Image 
+                  src="/images/dash.png" 
+                  alt="GenasAI Dashboard" 
+                  fill
+                  className="object-cover"
+                />
+             </div>
           </div>
         </div>
       </div>
