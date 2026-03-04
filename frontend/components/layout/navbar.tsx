@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export function Navbar() {
   return (
     <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl">
-      <nav className="flex items-center justify-between px-6 py-3 md:py-4 bg-white/90 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-full border border-white/20">
+      <nav className="flex items-center justify-between px-4  md:py-4 bg-white/90 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-full border border-white/20">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/" className="flex items-center group">
@@ -42,7 +42,7 @@ export function Navbar() {
           <Link href="/login" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
             Login
           </Link>
-          <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-6 shadow-[0_4px_14px_0_rgb(59,96,255,0.39)] transition-shadow">
+          <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 py-6 transition-shadow">
             Get Started
           </Button>
         </div>
