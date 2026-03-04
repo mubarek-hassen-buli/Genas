@@ -35,7 +35,7 @@ export function Hero() {
 
         {/* Subheading */}
         <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl font-medium leading-[1.6]">
-          GenasAI helps you generate assignments, essays, research drafts, and academic content 
+          Genas helps you generate assignments, essays, research drafts, and academic content 
           in minutes not hours.
         </p>
 

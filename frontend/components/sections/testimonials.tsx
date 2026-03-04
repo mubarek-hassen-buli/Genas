@@ -10,7 +10,7 @@ export function Testimonials() {
   const testimonials = [
     {
       role: "Student",
-      text: "GenasAI saved me hours every week. I just enter my topic, choose the format, and the assignment is ready properly structured and easy to submit.",
+      text: "Genas saved me hours every week. I just enter my topic, choose the format, and the assignment is ready properly structured and easy to submit.",
     },
     {
       role: "University Student",

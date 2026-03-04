@@ -22,10 +22,10 @@ export function FinalCta() {
         </div>
         {/* Content */}
         <div className="relative z-20 flex flex-col items-center justify-center text-center px-6 py-24 md:py-32">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-semibold  text-white mb-6 tracking-tight">
             Stop Starting From Scratch
           </h2>
-          <p className="text-lg md:text-xl text-blue-100/70 font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg md:text-xl text-[#E6E6E6] font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
             Generate structured assignments, essays, and research papers ready to submit in minutes.
           </p>
           <Link href="/dashboard">

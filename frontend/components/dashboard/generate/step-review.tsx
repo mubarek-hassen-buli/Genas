@@ -59,7 +59,7 @@ export function StepReview({ formData, onBack }: any) {
          <div className="w-full max-w-[280px] aspect-[1/1.4] bg-white rounded-lg shadow-[0_20px_40px_rgba(0,0,0,0.08)] border border-slate-100 flex flex-col p-8 relative overflow-hidden mb-8">
             <div className="w-1.5 h-full bg-[#10b981] absolute top-0 left-0"></div>
             
-            <div className="text-[9px] font-bold text-slate-300 uppercase tracking-widest mb-6">GenasAI Generated</div>
+            <div className="text-[9px] font-bold text-slate-300 uppercase tracking-widest mb-6">Genas Generated</div>
             
             <div className="w-full h-2 bg-slate-100 rounded-full mb-3"></div>
             <div className="w-3/4 h-2 bg-slate-100 rounded-full mb-10"></div>

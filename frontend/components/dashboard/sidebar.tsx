@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { 
@@ -34,18 +35,31 @@ export function Sidebar({ isCollapsed, setIsCollapsed }: { isCollapsed: boolean,
   return (
     <aside className={`h-screen bg-[#f8fafc]/50 border-r border-slate-200 flex flex-col hidden lg:flex fixed left-0 top-0 transition-all duration-300 z-50 ${isCollapsed ? 'w-[80px]' : 'w-[280px]'}`}>
       {/* Brand & Collapse */}
-      <div className={`h-20 flex items-center px-6 ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
+      <div className={`h-20 flex items-center px-6 ${isCollapsed ? 'justify-center border-b border-slate-100' : 'justify-between'}`}>
+        <Link href="/" className="flex items-center gap-3">
+          <div className="relative w-8 h-8 flex-shrink-0">
+            <Image 
+              src="/images/genas-logo.png" 
+              alt="Genas Logo" 
+              fill 
+              className="object-contain"
+            />
+          </div>
+          {!isCollapsed && (
+            <span className="text-[22px] font-bold text-slate-800 tracking-tight whitespace-nowrap">
+              Genas
+            </span>
+          )}
+        </Link>
+
         {!isCollapsed && (
-          <Link href="/" className="text-[22px] font-bold text-slate-800 tracking-tight whitespace-nowrap">
-            GenasAI
-          </Link>
+          <button 
+            onClick={() => setIsCollapsed(true)}
+            className="p-1.5 rounded-lg hover:bg-slate-100 text-slate-400 transition-colors"
+          >
+            <IconLayoutSidebarLeftCollapse className="w-5 h-5" />
+          </button>
         )}
-        <button 
-          onClick={() => setIsCollapsed(!isCollapsed)}
-          className="text-slate-400 hover:text-slate-600 transition-colors"
-        >
-          <IconLayoutSidebarLeftCollapse className={`w-5 h-5 flex-shrink-0 transition-transform ${isCollapsed ? 'rotate-180' : ''}`} />
-        </button>
       </div>
 
       {/* Navigation */}

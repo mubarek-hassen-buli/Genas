@@ -105,7 +105,7 @@ export function StepCategory({ formData, updateForm, onNext }: any) {
             {formData.category ? (
               <div className="w-full max-w-[280px] aspect-[1/1.4] bg-white rounded-md shadow-2xl relative p-6 animate-fade-in-up">
                  <div className="w-1 h-full bg-emerald-500 absolute left-0 top-0 rounded-l-md"></div>
-                 <div className="text-[9px] text-slate-400 font-bold tracking-widest uppercase mb-4">GenasAI Generated</div>
+                 <div className="text-[9px] text-slate-400 font-bold tracking-widest uppercase mb-4">Genas Generated</div>
                  <div className="w-full h-2 bg-slate-200 rounded-full mb-2"></div>
                  <div className="w-3/4 h-2 bg-slate-200 rounded-full mb-8"></div>
                  

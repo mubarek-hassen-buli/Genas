@@ -8,10 +8,10 @@ export function Effortless() {
       {/* Header */}
       <div className="max-w-3xl mx-auto mb-20 relative z-10 flex flex-col items-center">
         <div className="inline-flex items-center justify-center bg-white border border-slate-200 text-slate-500 text-[11px] font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm uppercase tracking-wider">
-          why GenasAI
+          why Genas
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight text-balance max-w-4xl mx-auto">
-          What Makes GenasAI Effortless Yet Powerful
+          What Makes Genas Effortless Yet Powerful
         </h2>
         <p className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
           One intelligent workspace to generate, customize, and export academic work without complexity.
@@ -168,7 +168,7 @@ export function Effortless() {
              <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-white shadow-2xl">
                 <Image 
                   src="/images/dash.png" 
-                  alt="GenasAI Dashboard" 
+                  alt="Genas Dashboard" 
                   fill
                   className="object-cover"
                 />

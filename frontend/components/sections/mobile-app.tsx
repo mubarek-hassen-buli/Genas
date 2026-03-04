@@ -3,14 +3,14 @@ import { IconSparkles } from "@tabler/icons-react";
 
 export function MobileApp() {
   return (
-    <section className="py-24 bg-[#F5F5F5] flex flex-col items-center justify-center px-4 relative overflow-hidden">
+    <section className="py-5 bg-[#F5F5F5] flex flex-col items-center justify-center px-4 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-blue-50/50 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative z-10">
         {/* Left Content */}
         <div className="flex-1 text-left flex flex-col gap-8">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight text-balance">
+          <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold text-slate-900 leading-[1.1] tracking-tight text-balance">
             Academic Writing Powered by Intelligence
           </h2>
 
@@ -19,7 +19,7 @@ export function MobileApp() {
               <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0 text-[#3b60ff] transition-transform group-hover:scale-110">
                 <IconSparkles className="w-6 h-6" />
               </div>
-              <p className="text-lg lg:text-xl text-slate-500 font-medium leading-relaxed">
+              <p className="text-lg lg:text-lg text-slate-500 font-medium leading-relaxed">
                 With Genas AI mobile, you can instantly generate well-structured academic documents wherever you are.
               </p>
             </div>
@@ -28,7 +28,7 @@ export function MobileApp() {
               <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0 text-[#3b60ff] transition-transform group-hover:scale-110">
                 <IconSparkles className="w-6 h-6" />
               </div>
-              <p className="text-lg lg:text-xl text-slate-500 font-medium leading-relaxed">
+              <p className="text-lg lg:text-lg text-slate-500 font-medium leading-relaxed">
                 From assignments to research papers, experience smarter formatting, faster creation, and effortless editing all in one seamless app.
               </p>
             </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
@@ -7,8 +8,16 @@ export function Navbar() {
       <nav className="flex items-center justify-between px-6 py-3 md:py-4 bg-white/90 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-full border border-white/20">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <Link href="/" className="text-xl md:text-2xl font-bold tracking-tight text-slate-900">
-            GenasAI
+          <Link href="/" className="flex items-center group">
+            <div className="relative w-28 h-8 md:w-32 md:h-10">
+              <Image 
+                src="/images/genas-logo.png" 
+                alt="Genas Logo" 
+                fill 
+                className="object-contain transition-transform group-hover:scale-105"
+                priority
+              />
+            </div>
           </Link>
         </div>
 

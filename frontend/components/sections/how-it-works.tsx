@@ -79,7 +79,7 @@ export function HowItWorks() {
           How it works
         </div>
         <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
-          How GenasAI works
+          How Genas works
         </h2>
         <p className="text-lg text-slate-500 font-medium">
           Everything you need to generate structured academic content, in one platform.

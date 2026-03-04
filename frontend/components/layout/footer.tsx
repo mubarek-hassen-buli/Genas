@@ -29,7 +29,7 @@ export function Footer() {
                 { name: "Telegram", url: "#" },
               ].map((link) => (
                 <li key={link.name}>
-                  <Link href={link.url} className="text-[15px] font-semibold text-slate-600 hover:text-slate-900 transition-colors flex items-center group w-fit">
+                  <Link href={link.url} className="text-[15px] font-semibold text-slate-600 hover:text-slate-900 transition-colors flex items-center justify-between group w-32">
                     {link.name}
                     <IconArrowUpRight className="w-3.5 h-3.5 ml-1 opacity-60 group-hover:opacity-100 transition-opacity" />
                   </Link>
@@ -89,7 +89,7 @@ export function Footer() {
         {/* Bottom Banner */}
         <div className="pt-8 border-t border-slate-200 flex flex-col items-center justify-center text-center">
           <p className="text-[13px] font-medium text-slate-500">
-            © {currentYear} GenasAI. All rights reserved.
+            © {currentYear} Genas. All rights reserved.
           </p>
         </div>
       </div>
