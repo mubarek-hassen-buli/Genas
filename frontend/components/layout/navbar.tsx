@@ -42,9 +42,11 @@ export function Navbar() {
           <Link href="/login" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
             Login
           </Link>
-          <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 py-6 transition-shadow">
-            Get Started
-          </Button>
+          <Link href="/waitlist">
+            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 py-6 transition-shadow">
+              Join Waitlist
+            </Button>
+          </Link>
         </div>
       </nav>
     </header>

@@ -41,10 +41,10 @@ export function Hero() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 relative z-10">
-          <Link href="/dashboard">
-            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_30px_rgb(59,96,255,0.3)] transition-all flex items-center gap-2 group font-semibold text-[15px]">
+          <Link href="/waitlist">
+            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 transition-all flex items-center gap-2 group font-semibold text-[15px]">
               <IconSparkles className="w-4 h-4 mr-2 group-hover:animate-pulse" />
-              Get Started Free
+              Join Waitlist
             </Button>
           </Link>
           <Button variant="outline" className="rounded-full bg-white/80 backdrop-blur-sm border-slate-200 text-slate-700 hover:bg-slate-50 px-8 h-12 shadow-sm transition-all font-semibold text-[15px]">

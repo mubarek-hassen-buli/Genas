@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { IconSparkles } from "@tabler/icons-react";
 
@@ -147,10 +148,12 @@ export function Effortless() {
             <p className="text-base lg:text-lg text-slate-500 font-medium leading-relaxed mb-8">
               AI trained for assignments, essays, and research. delivering clear structure, academic tone, and accurate formatting.
             </p>
-            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_20px_0_rgb(59,96,255,0.3)] transition-all">
-              <IconSparkles className="w-4 h-4 mr-2" />
-              Get Started Free
-            </Button>
+            <Link href="/waitlist">
+              <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 transition-all">
+                <IconSparkles className="w-4 h-4 mr-2" />
+                Join Waitlist
+              </Button>
+            </Link>
           </div>
           <div className="flex-1 w-full bg-white rounded-[40px] aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-slate-200 shadow-inner">
              <video 
@@ -174,10 +177,12 @@ export function Effortless() {
             <p className="text-base lg:text-lg text-slate-500 font-medium leading-relaxed mb-8">
               Choose your preferred document template, structure, depth, and sections before generation AI adapts instantly.
             </p>
-            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_20px_0_rgb(59,96,255,0.3)] transition-all">
-              <IconSparkles className="w-4 h-4 mr-2" />
-              Get Started Free
-            </Button>
+            <Link href="/waitlist">
+              <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 transition-all">
+                <IconSparkles className="w-4 h-4 mr-2" />
+                Join Waitlist
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -188,10 +193,12 @@ export function Effortless() {
             <p className="text-base lg:text-lg text-slate-500 font-medium leading-relaxed mb-8">
               Generate content in APA, MLA, Chicago, or custom formats ready for submission or review.
             </p>
-            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_20px_0_rgb(59,96,255,0.3)] transition-all">
-              <IconSparkles className="w-4 h-4 mr-2" />
-              Get Started Free
-            </Button>
+            <Link href="/waitlist">
+              <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 transition-all">
+                <IconSparkles className="w-4 h-4 mr-2" />
+                Join Waitlist
+              </Button>
+            </Link>
           </div>
           <div className="flex-1 w-full bg-white rounded-[40px] aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-slate-200 shadow-inner">
              <video 
@@ -219,10 +226,12 @@ export function Effortless() {
             <p className="text-base lg:text-lg text-slate-500 font-medium leading-relaxed mb-8">
               Download clean, submission-ready files in PDF, DOCX or PPT no extra formatting needed.
             </p>
-            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_20px_0_rgb(59,96,255,0.3)] transition-all">
-              <IconSparkles className="w-4 h-4 mr-2" />
-              Get Started Free
-            </Button>
+            <Link href="/waitlist">
+              <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 transition-all">
+                <IconSparkles className="w-4 h-4 mr-2" />
+                Join Waitlist
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -233,10 +242,12 @@ export function Effortless() {
             <p className="text-base lg:text-lg text-slate-500 font-medium leading-relaxed mb-8">
               All your generated documents are saved, categorized, and easy to manage in one place.
             </p>
-            <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 shadow-[0_8px_20px_0_rgb(59,96,255,0.3)] transition-all">
-              <IconSparkles className="w-4 h-4 mr-2" />
-              Get Started Free
-            </Button>
+            <Link href="/waitlist">
+              <Button className="rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white px-8 h-12 transition-all">
+                <IconSparkles className="w-4 h-4 mr-2" />
+                Join Waitlist
+              </Button>
+            </Link>
           </div>
           <div className="flex-1 w-full bg-[#edf4ff] rounded-[40px] p-10 lg:p-14 aspect-[4/3] flex items-center justify-center relative overflow-hidden border border-[#d6e6ff] shadow-inner">
              {/* Actual Dashboard Image with sleek border and shadow */}

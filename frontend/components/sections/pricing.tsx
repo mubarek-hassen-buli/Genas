@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { IconCircleCheck, IconCircleX } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
@@ -78,9 +79,11 @@ export function Pricing() {
                 </div>
               ))}
            </div>
-           <Button className="w-full rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white h-12 shadow-[0_4px_14px_0_rgb(59,96,255,0.39)] transition-all font-semibold">
-             Get Started Free
-           </Button>
+           <Link href="/waitlist" className="w-full">
+             <Button className="w-full rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white h-12 transition-all font-semibold">
+               Join Waitlist
+             </Button>
+           </Link>
         </div>
 
         {/* Student Pro */}
@@ -124,9 +127,11 @@ export function Pricing() {
                 </div>
               ))}
            </div>
-           <Button className="w-full rounded-full bg-white hover:bg-slate-50 text-slate-900 h-12 shadow-[0_4px_14px_0_rgb(0,0,0,0.1)] transition-all font-semibold">
-             Start 7-Day Free Trial
-           </Button>
+           <Link href="/waitlist" className="w-full">
+             <Button className="w-full rounded-full bg-white hover:bg-slate-50 text-slate-900 h-12 transition-all font-semibold">
+               Join Waitlist
+             </Button>
+           </Link>
         </div>
 
         {/* Pro Plan */}
@@ -165,9 +170,11 @@ export function Pricing() {
                 </div>
               ))}
            </div>
-           <Button className="w-full rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white h-12 shadow-[0_4px_14px_0_rgb(59,96,255,0.39)] transition-all font-semibold">
-             Start Pro Trial
-           </Button>
+           <Link href="/waitlist" className="w-full">
+             <Button className="w-full rounded-full bg-[#3b60ff] hover:bg-[#3252d9] text-white h-12 transition-all font-semibold">
+               Join Waitlist
+             </Button>
+           </Link>
         </div>
 
       </div>
