@@ -38,27 +38,27 @@ export function MobileApp() {
         {/* Right Images */}
         <div className="flex-1 w-full relative h-[650px] flex items-center justify-center">
           {/* Subtle glow behind phones */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-blue-100/30 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-100/30 rounded-full blur-[140px] pointer-events-none" />
           
-          <div className="relative w-full max-w-[500px] h-[600px] flex items-center justify-center">
-             {/* Back Phone - positioned slightly left and down */}
-             <div className="absolute left-0 bottom-0 w-[300px] md:w-[420px] transition-transform hover:scale-105 duration-500 z-10">
+          <div className="relative w-full max-w-[550px] h-[600px] flex items-center justify-center">
+             {/* Back Phone - left side of the 'V' */}
+             <div className="absolute left-8 bottom-0 w-[280px] md:w-[400px] transition-transform hover:scale-105 duration-500 z-10 -rotate-[10deg] translate-x-4">
                 <Image 
                   src="/images/mock-2.png" 
                   alt="Mobile Mockup 2" 
-                  width={420}
-                  height={840}
-                  className="w-full h-auto"
+                  width={400}
+                  height={800}
+                  className="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.1)]"
                 />
              </div>
              
-             {/* Front Phone - positioned slightly right and up, strongly overlapping the back phone */}
-             <div className="absolute right-0 top-0 w-[300px] md:w-[420px] transition-transform hover:scale-105 duration-500 z-20 drop-shadow-[-25px_25px_50px_rgba(0,0,0,0.18)]">
+             {/* Front Phone - right side of the 'V', anchored to bottom */}
+             <div className="absolute right-8 bottom-0 w-[280px] md:w-[400px] transition-transform hover:scale-105 duration-500 z-20 rotate-[10deg] -translate-x-4 drop-shadow-[-30px_30px_60px_rgba(0,0,0,0.25)]">
                 <Image 
                   src="/images/mock-1.png" 
                   alt="Mobile Mockup 1" 
-                  width={420}
-                  height={840}
+                  width={400}
+                  height={800}
                   className="w-full h-auto"
                 />
              </div>
