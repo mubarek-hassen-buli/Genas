@@ -5,12 +5,12 @@ export function Features() {
     {
       title: "Assignment Generator",
       description: "Generate structured, ready assignments with customizable depth, format, and templates.",
-      image: <Image src="/images/assignment-img.png" alt="Assignment Generator" width={110} height={110} className="object-contain drop-shadow-lg" />
+      image: <Image src="/images/white-paper.png" alt="Assignment Generator" width={110} height={110} className="object-contain drop-shadow-lg" />
     },
     {
       title: "Essay Generator",
       description: "Create clear, well-organized essays tailored to your topic, tone, and academic level.",
-      image: <Image src="/images/white-paper.png" alt="Essay Generator" width={110} height={110} className="object-contain drop-shadow-lg" />
+      image: <Image src="/images/assignment-img.png" alt="Essay Generator" width={110} height={110} className="object-contain drop-shadow-lg" />
     },
     {
       title: "Research Generator",

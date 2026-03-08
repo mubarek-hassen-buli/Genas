@@ -21,10 +21,11 @@ export function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-white/40 shadow-sm rounded-full px-4 py-1.5 mb-8">
           <span className="text-xs font-semibold text-slate-800 flex items-center gap-1.5">
-            <span className="w-4 h-4 rounded-full bg-slate-100 flex items-center justify-center border border-slate-200">
-               <span className="w-1.5 h-1.5 bg-slate-600 rounded-full" />
+            <span className="relative flex h-2 w-2 mr-0.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.8)]"></span>
             </span>
-            Built for Students, Educators & Researcher
+            Built for Students, Educators & Researchers
           </span>
         </div>
 
