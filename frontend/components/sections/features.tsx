@@ -44,17 +44,17 @@ export function Features() {
           return (
             <div 
               key={index}
-              className={`bg-white rounded-[32px] p-3 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] transition-all duration-300 relative group overflow-hidden flex flex-col ${rotationClass} hover:rotate-0 hover:-translate-y-2`}
+              className={`bg-white rounded-[32px] p-2.5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] transition-all duration-300 relative group overflow-hidden flex flex-col ${rotationClass} hover:rotate-0 hover:-translate-y-2`}
             >
-               <div className="bg-[#F5F5F5] rounded-[24px] p-5 h-full flex flex-col text-left">
+               <div className="bg-[#F5F5F5] rounded-[24px] p-4 h-full flex flex-col text-left">
                  {/* Feature Visual */}
-                 <div className="relative w-full h-32 flex items-center justify-center mb-8 mt-2">
+                 <div className="relative w-full h-24 flex items-center justify-center mb-4 mt-2">
                    {feature.image}
                  </div>
-
+ 
                  {/* Content */}
                  <div className="relative z-10 px-1 pb-1 mt-auto">
-                   <h3 className="text-[17px] font-bold text-slate-900 mb-2.5">{feature.title}</h3>
+                   <h3 className="text-[17px] font-bold text-slate-900 mb-1.5">{feature.title}</h3>
                    <p className="text-[13px] text-slate-500 leading-relaxed font-medium">
                      {feature.description}
                    </p>

@@ -7,11 +7,11 @@ export function HowItWorks() {
       title: "Choose a Category",
       description: "Select what you want to generate Assignment, Essay, Research, and more",
       icons: (
-        <div className="relative w-full h-32 flex items-center justify-center mb-6">
+        <div className="relative w-full h-24 flex items-center justify-center mb-4">
           <div className="absolute inset-0 bg-red-500/10 blur-[40px] rounded-full" />
-          <IconClipboardList className="w-16 h-16 text-red-500 absolute -left-2 rotate-[-10deg]" stroke={1.5} />
-          <IconPencilSearch className="w-20 h-20 text-red-600 absolute z-10" fill="currentColor" fillOpacity={0.1} stroke={1.2} />
-          <IconFileDescription className="w-14 h-14 text-red-400 absolute -right-2 rotate-[10deg] opacity-80" stroke={1.5} />
+          <IconClipboardList className="w-12 h-12 text-red-500 absolute -left-2 rotate-[-10deg]" stroke={1.5} />
+          <IconPencilSearch className="w-16 h-16 text-red-600 absolute z-10" fill="currentColor" fillOpacity={0.1} stroke={1.2} />
+          <IconFileDescription className="w-10 h-10 text-red-400 absolute -right-2 rotate-[10deg] opacity-80" stroke={1.5} />
         </div>
       )
     },
@@ -20,13 +20,13 @@ export function HowItWorks() {
       title: "Add Your Details",
       description: "Enter course, topic, depth, structure, and file format",
       icons: (
-        <div className="relative w-full h-32 flex flex-col items-center justify-center mb-6">
+        <div className="relative w-full h-24 flex flex-col items-center justify-center mb-4">
           <div className="absolute inset-0 bg-red-500/10 blur-[40px] rounded-full" />
           {/* Mocking the UI window floating elements */}
-          <div className="w-32 h-20 bg-red-600 rounded-xl shadow-[0_0_30px_rgba(220,38,38,0.3)] relative flex items-center justify-center z-10 border border-red-500/50">
-             <div className="absolute -top-4 -left-4 bg-zinc-800 text-red-400 text-[10px] px-2 py-1 rounded-md border border-zinc-700 flex items-center gap-1 shadow-lg"><IconTemplate size={12}/> Title</div>
-             <div className="absolute -top-6 right-2 bg-zinc-800 text-red-400 text-[10px] px-2 py-1 rounded-md border border-zinc-700 flex items-center gap-1 shadow-lg"><IconFolders size={12}/> Course</div>
-             <div className="absolute bottom-2 left-2 bg-zinc-800 text-red-400 text-[10px] px-2 py-1 rounded-md border border-zinc-700 flex items-center gap-1 shadow-lg"><IconLayoutDashboard size={12}/> Depth</div>
+          <div className="w-28 h-18 bg-red-600 rounded-xl shadow-[0_0_30px_rgba(220,38,38,0.3)] relative flex items-center justify-center z-10 border border-red-500/50">
+             <div className="absolute -top-3 -left-3 bg-zinc-800 text-red-400 text-[10px] px-2 py-1 rounded-md border border-zinc-700 flex items-center gap-1 shadow-lg"><IconTemplate size={12}/> Title</div>
+             <div className="absolute -top-5 right-2 bg-zinc-800 text-red-400 text-[10px] px-2 py-1 rounded-md border border-zinc-700 flex items-center gap-1 shadow-lg"><IconFolders size={12}/> Course</div>
+             <div className="absolute bottom-1 left-2 bg-zinc-800 text-red-400 text-[10px] px-2 py-1 rounded-md border border-zinc-700 flex items-center gap-1 shadow-lg"><IconLayoutDashboard size={12}/> Depth</div>
           </div>
         </div>
       )
@@ -36,9 +36,9 @@ export function HowItWorks() {
       title: "Pick a Template",
       description: "Choose a template you want to style your document",
       icons: (
-        <div className="relative w-full h-32 flex flex-col items-center justify-center mb-6">
+        <div className="relative w-full h-24 flex flex-col items-center justify-center mb-4">
           <div className="absolute inset-0 bg-red-500/10 blur-[40px] rounded-full" />
-          <div className="flex gap-2 relative z-10">
+          <div className="flex gap-2 relative z-10 scale-90">
              <div className="w-10 h-14 bg-white rounded shadow-md border-t-2 border-red-500 rotate-[-15deg] translate-y-2 translate-x-4 opacity-70" />
              <div className="w-12 h-16 bg-white rounded shadow-lg border-t-2 border-red-500 rotate-[-5deg] z-10" />
              <div className="w-14 h-18 bg-white rounded shadow-xl border-t-4 border-red-600 z-20 flex flex-col p-1 gap-1">
@@ -57,12 +57,12 @@ export function HowItWorks() {
       title: "Generate Instantly",
       description: "Let AI generate the document instantly with the style you need",
       icons: (
-        <div className="relative w-full h-32 flex flex-col items-center justify-center mb-6">
+        <div className="relative w-full h-24 flex flex-col items-center justify-center mb-4">
           <div className="absolute inset-0 bg-red-500/10 blur-[40px] rounded-full" />
-          <div className="relative z-10">
-            <IconFileSpark className="w-20 h-20 text-white" stroke={1} />
-            <div className="absolute -bottom-2 -right-4 bg-red-600 text-white text-[10px] px-2 py-1 rounded border border-red-400 flex items-center gap-1 shadow-lg shadow-red-500/50">
-               <IconWand size={12}/> Generating
+          <div className="relative z-10 scale-90">
+            <IconFileSpark className="w-16 h-16 text-white" stroke={1} />
+            <div className="absolute -bottom-1 -right-3 bg-red-600 text-white text-[9px] px-2 py-0.5 rounded border border-red-400 flex items-center gap-1 shadow-lg shadow-red-500/50">
+               <IconWand size={10}/> Generating
             </div>
           </div>
         </div>
@@ -105,25 +105,25 @@ export function HowItWorks() {
           {steps.map((step, index) => (
             <div 
               key={index} 
-              className="bg-[#141414] rounded-[24px] p-6 text-left relative overflow-hidden group shadow-2xl shadow-black/5 hover:-translate-y-1 transition-transform duration-300"
+              className="bg-[#141414] rounded-[24px] p-5 text-left relative overflow-hidden group shadow-2xl shadow-black/5 hover:-translate-y-1 transition-transform duration-300"
             >
                {/* Ambient grid background matching the design */}
                <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:14px_14px] opacity-20 pointer-events-none" />
                
                {/* Step number badge */}
-               <div className="absolute top-6 left-6 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs font-semibold text-white/80 z-20 backdrop-blur-sm">
+               <div className="absolute top-5 left-5 w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-[10px] font-semibold text-white/80 z-20 backdrop-blur-sm">
                  {step.number}
                </div>
 
                {/* Custom Icon Representation */}
-               <div className="mt-8">
+               <div className="mt-4">
                  {step.icons}
                </div>
 
                {/* Text Content */}
-               <div className="relative z-20 mt-2">
-                 <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
-                 <p className="text-sm text-slate-400 leading-relaxed font-medium">
+               <div className="relative z-20 mt-1">
+                 <h3 className="text-base font-semibold text-white mb-1.5">{step.title}</h3>
+                 <p className="text-[13px] text-slate-400 leading-relaxed font-medium">
                    {step.description}
                  </p>
                </div>
