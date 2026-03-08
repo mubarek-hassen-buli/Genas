@@ -23,23 +23,23 @@ export function Navbar() {
 
         {/* Center Links */}
         <div className="hidden md:flex items-center justify-center space-x-8">
-          <Link href="#features" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+          <Link href="/#features" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
             Features
           </Link>
-          <Link href="#use-cases" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+          <Link href="/#how-it-works" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
             Use Cases
           </Link>
-          <Link href="#pricing" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+          <Link href="/#pricing" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
             Pricing
           </Link>
-          <Link href="#resources" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+          <Link href="/#resources" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
             Resources
           </Link>
         </div>
 
         {/* Right CTA */}
         <div className="flex items-center space-x-4">
-          <Link href="/login" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+          <Link href="/waitlist" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
             Login
           </Link>
           <Link href="/waitlist">
