@@ -9,12 +9,36 @@ import Silk from "@/components/Silk";
 
 export default function WaitlistPage() {
   const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Logic for waitlist submission would go here
-    alert("Thanks for joining the waitlist!");
-    setEmail("");
+    setIsLoading(true);
+    setMessage(null);
+
+    try {
+      const response = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage({ type: 'success', text: data.message });
+        setEmail("");
+      } else {
+        setMessage({ type: 'error', text: data.error || 'Something went wrong.' });
+      }
+    } catch (err) {
+      setMessage({ type: 'error', text: 'Failed to join. Please check your connection.' });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -67,23 +91,52 @@ export default function WaitlistPage() {
           Extra-ordinary assignments, smooth research, and smart templates. Launching soon.
         </p>
 
-        {/* Waitlist Form */}
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-lg mb-10">
-          <input 
-            type="email" 
-            placeholder="Enter your email" 
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="flex-1 w-full h-14 bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl px-5 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-base"
-          />
-          <Button 
-            type="submit"
-            className="w-full sm:w-auto h-14 px-8 bg-white hover:bg-slate-100 text-black rounded-xl font-bold transition-all shadow-lg"
-          >
-            Join Waitlist
-          </Button>
-        </form>
+        {/* Waitlist Form Area */}
+        <div className="w-full max-w-lg mb-10 min-h-[120px] flex flex-col items-center justify-center">
+          {message?.type === 'success' ? (
+            <div className="inline-flex items-center gap-4 bg-[#1a1a1a]/80 backdrop-blur-2xl border border-white/5 rounded-full py-4 px-8 animate-in zoom-in-95 fade-in duration-500 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+              <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-[#4ade80] to-[#2dd4bf] rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(74,222,128,0.4)]">
+                <IconCircleCheck className="w-6 h-6 text-[#0a0a0a]" stroke={3} />
+              </div>
+              <p className="text-xl font-bold text-white tracking-tight">
+                You're in. We'll be in touch.
+              </p>
+            </div>
+          ) : (
+            <>
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-3 w-full mb-4">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  disabled={isLoading}
+                  className="flex-1 w-full h-14 bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl px-5 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-base disabled:opacity-50"
+                />
+                <Button 
+                  type="submit"
+                  disabled={isLoading}
+                  className="w-full sm:w-auto h-14 px-8 bg-white hover:bg-slate-100 text-black rounded-xl font-bold transition-all shadow-lg disabled:opacity-70 flex items-center justify-center min-w-[140px]"
+                >
+                  {isLoading ? (
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 border-2 border-black/20 border-t-black rounded-full animate-spin" />
+                      <span>Joining...</span>
+                    </div>
+                  ) : "Join Waitlist"}
+                </Button>
+              </form>
+
+              {/* Error Status Message */}
+              {message?.type === 'error' && (
+                <div className="w-full text-sm font-semibold px-4 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-300 bg-red-500/20 text-red-400 border border-red-500/30">
+                  {message.text}
+                </div>
+              )}
+            </>
+          )}
+        </div>
 
         {/* Perks */}
         <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
@@ -93,7 +146,7 @@ export default function WaitlistPage() {
           </div>
           <div className="flex items-center gap-2">
             <IconCircleCheck className="w-5 h-5 text-white" />
-            <span className="text-sm font-semibold text-white/90">100 lucky users will get pro version for lifetime</span>
+            <span className="text-sm font-semibold text-white/90">100 lucky users will get pro version for 1 Month</span>
           </div>
         </div>
       </div>
